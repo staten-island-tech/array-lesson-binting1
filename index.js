@@ -55,4 +55,10 @@ const highlyratedproducts =
     products.filter((product)=> product.rating >= 4.5)
     .forEach((product) => console.log(product.name));
 
+
 // this is the combined version of forEach and filter (aka the simplified version of the grayed part above)
+
+const affordableElectronics = 
+   products.filter((product) =>  product.price < 1000 && product.category === 'Electronics')
+   .forEach((product) => console.log(product.name));
+
